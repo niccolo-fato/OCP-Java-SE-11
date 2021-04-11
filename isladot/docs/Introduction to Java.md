@@ -1,9 +1,14 @@
 ## Java Naming conventions:
-- Package: reverse.company.domain | Ex: com.oracle.demos.animals
-- Class: PascalCase | Ex: ShepardDog
-- Variable: camelCase | Ex: shepardDog
-- Constant: SCREAMING_SNAKE_CASE | Ex: MIX_SIZE
-- Method: camelCase, first word verb | throwTheBall
+- Package: reverse.company.domain  
+  Ex: com.oracle.demos.animals
+- Class: PascalCase  
+  Ex: ShepardDog
+- Variable: camelCase  
+  Ex: shepardDog
+- Constant: SCREAMING_SNAKE_CASE  
+  Ex: MIX_SIZE
+- Method: camelCase, first word verb  
+  Ex: throwTheBall
 
 ## Java Basic Rules: 
 - All Java statements must be terminated with ";" symbol.
@@ -26,10 +31,10 @@ class Dog {
 
 ## Access Classes Across Packages:
 - Method 1: Prefix the class name with the package name.  
-``` com.oracle.demos.animals.Dog ```
-- Method 2: Using the ```import``` statement.
-  - Specifing the class: ```com.oracle.demos.animals.Dog```   
-  - Importing the entire package: ```com.oracle.demos.animals.*```
+`com.oracle.demos.animals.Dog`
+- Method 2: Using the `import` statement.
+  - Specifing the class: `com.oracle.demos.animals.Dog`   
+  - Importing the entire package: `com.oracle.demos.animals.*`
 
 ```java
 // Single import.
