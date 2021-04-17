@@ -1,2 +1,4 @@
 # Java class files
 *.class
+.vscode
+persicoDev/code/practiceFive
