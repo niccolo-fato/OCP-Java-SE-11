@@ -1,4 +1,5 @@
 ## Java Naming conventions:
+
 - Package: reverse.company.domain  
   Ex: com.oracle.demos.animals
 - Class: PascalCase  
@@ -10,16 +11,18 @@
 - Method: camelCase, first word verb  
   Ex: throwTheBall
 
-## Java Basic Rules: 
+## Java Basic Rules:
+
 - All Java statements must be terminated with ";" symbol.
 - Code blocks must be enclosed with "{" and "}" symbols.
 - Indentation is syntactically irrelevant but highly recommended for readability.
 
 ## Define Java Class:
+
 - Class name: PascalCase.
 - Class file: \<class name>.java
 - Highly recommended to also define package when defining a class.  
-If package definition is missing, class would belong to a "default" package.
+  If package definition is missing, class would belong to a "default" package.
 - Package name: reverse.domain.company.naming.system.adopted.
 
 ```java
@@ -30,10 +33,11 @@ class Dog {
 ```
 
 ## Access Classes Across Packages:
+
 - Method 1: Prefix the class name with the package name.  
-`com.oracle.demos.animals.Dog`
+  `com.oracle.demos.animals.Dog`
 - Method 2: Using the `import` statement.
-  - Specifing the class: `com.oracle.demos.animals.Dog`   
+  - Specifing the class: `com.oracle.demos.animals.Dog`
   - Importing the entire package: `com.oracle.demos.animals.*`
 
 ```java
@@ -57,12 +61,13 @@ public class Owner {
 ```
 
 ## Use Access Modifiers:
+
 - `public`: Visible to any other class.
 - `protected`: Visible to classes that are in the same package or to subclasses.
 - `<default>`: Visible only to classes in the same package.
 - `private`: Visible only within the same class.
 
-```java 
+```java
 package a; // No reverse.domain convention for typing speed purposes.
 public class X {
   public Y y1;
@@ -87,6 +92,7 @@ public class Y extends X {
 ```
 
 ## Create Main Application Class
+
 - It must be called `main`.
 - It must be `public`. We need to invoke this method from outside of this class.
 - It must be `static`. Methods that can be invoked without creating an instance.
@@ -103,31 +109,37 @@ public class Program {
 ```
 
 ## Compile Java Program
+
 ```
 javac -cp /project/classes
       -d /project/classes
       /project/sources/demos/Program.java
 ```
+
 - \-classpath of -cp: Path of other (compiled) classes that the program need to use.
 - \-d: Path to store compilation result.
 - Path to source code.
 
 ## Execute Java Program
+
 ```sh
 java -cp /project/classes
-      demos.Program 
+      demos.Program
       Luca "Biagetti Luca"
 ```
+
 - \-classpath of -cp: Path where classes are located.
 - Fully qualified class name (package prefix).
 - Optionally: space separated list of parameters.
 
-Since Java 11, is possible to run single-file source code.  
+Since Java 11, is possible to run single-file source code.
+
 ```
 java /project/sources/demos/Program.java
 ```
 
 ## Comments and Documentation
+
 - Code comments:
   - Single-line. `// single-line comment`
   - Multi-line. `/* multi-line comment */`
@@ -137,7 +149,7 @@ java /project/sources/demos/Program.java
   - Used by `javadoc` tool to generate docs.
 
 ```
-javadoc -d <docs path>  
+javadoc -d <docs path>
         -sourcepath <source code path>
         -subpackages <name of the root package>
 ```
