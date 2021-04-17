@@ -1,4 +1,4 @@
-package HelloWorld.sources.app;
+package HelloWorld.sources;
 
 public class HelloWorld {
   public static void main(String[] args) {
