@@ -11,7 +11,7 @@ public class Product {
   private Rating rating;
 
   public Product() {
-    this(0, "no name", BigDecimal.ZERO)
+    this(0, "no name", BigDecimal.ZERO);
    }
 
   public Product(int id, String name, BigDecimal price, Rating rating) {
